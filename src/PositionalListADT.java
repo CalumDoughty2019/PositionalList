@@ -16,9 +16,9 @@ public interface PositionalListADT<E> {
 
     Position<E> addLast(E element);
 
-    Position<E> addBefore(Position<E> position, E element);
+    Position<E> addBefore(Position<E> position, E element) throws IllegalArgumentException;
 
-    Position<E> addAfter(Position<E> position, E element);
+    Position<E> addAfter(Position<E> position, E element) throws IllegalArgumentException;
 
     E set(Position<E> position, E element) throws IllegalArgumentException;
 
